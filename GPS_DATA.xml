@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<data>
+    <sample name = "start">
+        <long>-94.420307</long>
+        <lat>44.968046</lat>
+        <weight>3500</weight>
+        <speed>0</speed>
+    </sample>
+
+    <sample name="sample1">
+        <long>-89.132008</long>
+        <lat>44.33328</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample2">
+        <long>-116.359998</long>
+        <lat>33.755787</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+        <sample name="sample3">
+        <long>-116.54911</long>
+        <lat>33.844843</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample4">
+        <long>-93.44786</long>
+        <lat>44.92057</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample5">
+        <long>-91.493619</long>
+        <lat>44.240309</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample6">
+        <long>-94.419696</long>
+        <lat>44.968041</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample7">
+        <long>89.132027</long>
+        <lat>44.333304</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample8">
+        <long>-116.360066</long>
+        <lat>33.755783</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample9">
+        <long>-116.549069</long>
+        <lat>33.844847</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="sample10">
+        <long>-93.447851</long>
+        <lat>44.920474</lat>
+        <weight>3500</weight>
+        <speed>80</speed>
+    </sample>
+
+    <sample name="end">
+        <long>-91.493768</long>
+        <lat>44.240304 </lat>
+        <weight>3500</weight>
+        <speed>0</speed>
+    </sample>
+
+</data>
