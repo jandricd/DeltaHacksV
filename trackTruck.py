@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import time
+import math
 
 weight = 3500
 start = (-94.420307, 44.968046)
@@ -37,16 +38,30 @@ def sendInfo(dataSet):
         counter = checkWeight(dataSet[i], counter)
         time.sleep(1)
 
-def alert():
+def alertWeight():
     print("Weight loss detected")
+
+def alertDist():
+    print("Driver has left designated area")
 
 def checkWeight(dataSetDict, counter):
     
     if ((dataSetDict['weight'] < weight) and (counter != 1)):
-        alert()
+        alertWeight()
         counter += 1
 
     return counter
 
-sendInfo(parseXML("GPS_DATA.xml"))
+def midRad (start, end):
+    mid = (((start[0]+end[0])/2), ((start[1]+end[1])/2))
+    radius = math.sqrt(pow(mid[0]-start[0], 2) + pow(mid[1]-start[1], 2))
+    return (mid, radius)
+
+def checkCircle(rMtuple, currentPos):
+    distanceTrucker = math.sqrt(pow(rMtuple[0][0]-currentPos[0], 2) + pow(rMtuple[0][1]-currentPos[1], 2))
+
+    if (distanceTrucker > rMtuple[1]):
+        alertDist()
+
+# sendInfo(parseXML("GPS_DATA.xml"))
 
